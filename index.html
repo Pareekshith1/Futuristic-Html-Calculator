@@ -1,0 +1,87 @@
+<!-- Owner: Pareekshith.P-->
+<!-- repo-Address: https://github.com/Pareekshith1/Futuristic-Html-Calculator-->
+<!-- desc: this is a simple and futuristic looking calculator with some amazing inbuilt features-->
+<!-- enjoy this project and modify according to your needs-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Calculator</title>
+  </head>
+  <body id="bod">
+    <div id="main-div">
+      <div id="display-div">
+        <p id="number">0</p>
+      </div>
+      <button id="1" class="mainnum">1</button>
+      <button id="2" class="mainnum">2</button>
+      <button id="3" class="mainnum">3</button>
+      <button id="+" >+</button>
+      <button id="4" class="mainnum">4</button>
+      <button id="5" class="mainnum">5</button>
+      <button id="6" class="mainnum">6</button>
+      <button id="-">-</button>
+      <button id="7" class="mainnum">7</button>
+      <button id="8" class="mainnum">8</button>
+      <button id="9" class="mainnum">9</button>
+      <button id="*">*</button>
+      <button id="C" onclick="clear_screen()">C</button>
+      <button id="0" class="mainnum">0</button>
+      <button id="=">=</button>
+      <button id="/">/</button>
+    </div>
+
+    <div id="slider" onclick="mover()">
+      <div id="slider-button"></div>
+    </div>
+
+    
+
+    <div id="menu">
+      <h1>Menu</h1>
+      <button class="menu-list" onclick="customizerdiv_setter()">Customize</button>
+      <button class="menu-list" onclick="restore_settings()">Restore</button>
+      <button class="menu-list">History</button>
+      <button class="menu-list" onclick="clear_history()">Clear-History</button>
+    </div>
+
+    <div class="menu-icon"  id="icon" onclick="hideandseek_menubar()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <div id="customization-div">
+      <p>Number-Keys</p>
+      <button class="color" id="green" data-color="green" onclick="color_changer(this)"></button>
+      <button class="color" id="yellow" data-color="yellow" onclick="color_changer(this)"></button>
+      <button class="color" id="orange" data-color="orange" onclick="color_changer(this)"></button>
+      <button class="color" id="red" data-color="red" onclick="color_changer(this)"></button>
+      <p>Display-Color</p>
+      <button class="color" id="green1"  data-color="green" onclick=" color_changer2(this)"></button>
+      <button class="color" id="yellow1" data-color="yellow"  onclick=" color_changer2(this)"></button>
+      <button class="color" id="orange1" data-color="orange"  onclick=" color_changer2(this)"></button>
+      <button class="color" id="red1"  data-color="red"  onclick=" color_changer2(this)"></button>
+      <p>Calculator-Cover</p>
+      <button class="color" id="green2" data-color="green"  onclick=" color_changer3(this)"></button>
+      <button class="color" id="yellow2" data-color="yellow"  onclick=" color_changer3(this)"></button>
+      <button class="color" id="orange2"  data-color="orange"  onclick=" color_changer3(this)"></button>
+      <button class="color" id="red2" data-color="red"  onclick=" color_changer3(this)"></button>
+      <p>Background-Color</p>
+      <button class="color" id="green3" data-color="green"  onclick=" color_changer4(this)"></button>
+      <button class="color" id="yellow3" data-color="yellow" onclick=" color_changer4(this)"></button>
+      <button class="color" id="orange3"  data-color="orange" onclick=" color_changer4(this)"></button>
+      <button class="color" id="red3" data-color="red" onclick=" color_changer4(this)"></button>
+      <p>Result-Color</p>
+      <button class="color" id="green4" data-color="green" onclick=" color_changer5(this)"></button>
+      <button class="color" id="yellow4" data-color="yellow" onclick=" color_changer5(this)"></button>
+      <button class="color" id="orange4"  data-color="orange" onclick=" color_changer5(this)"></button>
+      <button class="color" id="red4" data-color="red" onclick=" color_changer5(this)"></button>
+
+    </div>
+    
+    
+    <script src="index.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,346 @@
+/* owner: pareekshith.P */
+/* this is the css part of the calculator*/
+/* remove this commands while editing*/
+
+body {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#main-div {
+  background-color: #444;
+  position: relative;
+  left:250px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+#display-div {
+  background-color: #555;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+#number {
+  font-size: 24px;
+  color: #fff;
+}
+
+button {
+  background-color: #666;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  padding: 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  width: 70px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button[id="C"] {
+  background-color: #ff5050;
+  font-weight: bold;
+}
+
+button[id="="] {
+  background-color: #00cc66;
+  font-weight: bold;
+}
+
+button.operator {
+  background-color: #ff9933;
+  font-weight: bold;
+}
+
+button.operator:hover {
+  background-color: #e68a00;
+}
+
+/* styles for the first row */
+button[id="1"] {
+  position: relative;
+  right: 10px;
+  top: 30px;
+}
+
+button[id="2"] {
+  position: relative;
+  left: 75px;
+  bottom: 41px;
+}
+
+button[id="3"] {
+  position: relative;
+  bottom: 112px;
+  left: 163px;
+}
+
+button[id="+"] {
+  position: relative;
+  bottom: 182.5px;
+  left: 250px;
+}
+
+/* style for the second row */
+button[id="4"]{
+  position:relative;
+  bottom:160px;
+  right: 10px;  
+}
+button[id="5"]{
+  position:relative;
+  bottom:230px;
+  left: 75px;
+}
+button[id="6"]{
+  position:relative;
+  bottom: 301px;
+  left: 163px;
+}
+button[id="-"]{
+  position:relative;
+  bottom: 372px;
+  left: 250px;
+}
+
+/* for the third row */
+button[id="7"]{
+  position:relative;
+  bottom:350px;
+  right: 10px; 
+}
+button[id="8"]{
+  position:relative;
+  bottom:420px;
+  left: 75px;
+}
+button[id="9"]{
+  position:relative;
+  bottom: 492px;
+  left: 163px;
+}
+button[id="*"]{
+  position:relative;
+  bottom: 562px;
+  left: 250px;
+}
+
+/* For the fourth row */
+button[id="C"]{
+  position:relative;
+  bottom:540px;
+  right: 10px;
+}
+button[id="0"]{
+  position:relative;
+  bottom:611px;
+  left: 75px;
+}
+button[id="="]{
+  position:relative;
+  bottom: 682px;
+  left: 163px;
+}
+button[id="/"]{
+  position:relative;
+  bottom: 752px;
+  left: 250px;
+}
+
+/* nightmode slider */
+
+#slider{
+  width: 100px;
+  height:40px;
+  border-radius: 20px;
+  background-color:white;
+  position:relative;
+  bottom: 330px;
+  left: 500px;  
+}
+
+#slider-button{
+
+  width:30px;
+  height:30px;
+  border-radius: 100%;
+  background-color: #333;
+  position:relative;
+  top:5px;
+  left: 5px;
+
+}
+
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  z-index: 1000; 
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+}
+
+#menu {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background-color: #666;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: aliceblue;
+  position: absolute;
+  text-align: center;
+  top: 140px;
+  left: 105px;
+  right: 315px; 
+}
+
+.menu-list {
+  width:290px;
+  height:100px;
+  position:relative;
+  top: 260px;
+  border-left: transparent;
+  border-right:transparent;
+}
+
+#customization-div {
+  height: 76%;
+  width: 290px;
+  background-color: #444;
+  text-align: center;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  display: none;
+  position: absolute;
+  top: 100px; 
+  left: 320px; 
+}
+
+.color {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+#green{
+  background-color: forestgreen;
+}
+
+#yellow{
+  background-color: yellowgreen;
+}
+
+#orange{
+  background-color: orange;
+}
+
+#red{
+  background-color: red;
+}
+
+
+#green1{
+  background-color: forestgreen;
+}
+
+#yellow1{
+  background-color: yellowgreen;
+}
+
+#orange1{
+  background-color: orange;
+}
+
+#red1{
+  background-color: red;
+}
+
+
+#green2{
+  background-color: forestgreen;
+}
+
+#yellow2{
+  background-color: yellowgreen;
+}
+
+#orange2{
+  background-color: orange;
+}
+
+#red2{
+  background-color: red;
+}
+
+
+#green3{
+  background-color: forestgreen;
+}
+
+#yellow3{
+  background-color: yellowgreen;
+}
+
+#orange3{
+  background-color: orange;
+}
+
+#red3{
+  background-color: red;
+}
+
+
+#green4{
+  background-color: forestgreen;
+}
+
+#yellow4{
+  background-color: yellowgreen;
+}
+
+#orange4{
+  background-color: orange;
+}
+
+#red4{
+  background-color: red;
+}
+
+
